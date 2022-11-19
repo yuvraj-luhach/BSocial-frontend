@@ -4,7 +4,7 @@ import axios from "axios";
 // const url = "http://localhost:5000/posts";
 
 // axios instance
-const API = axios.create({ baseURL: "http://localhost:5000" });
+const API = axios.create({ baseURL: "https://bsocial-api.onrender.com" });
 // api will now make different calls to posts, users etc
 
 // this function will happen on each one of the request
