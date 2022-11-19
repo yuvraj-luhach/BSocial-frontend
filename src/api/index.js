@@ -4,9 +4,11 @@ import axios from "axios";
 // const url = "http://localhost:5000/posts";
 
 // axios instance
-const API = axios.create({ baseURL: "https://bsocial-api.onrender.com" });
+const API = axios.create({ baseURL: "https://bsocial-backend.onrender.com" });
 // api will now make different calls to posts, users etc
 
+// https://bsocial-api.onrender.com
+// https://bsocial-backend.onrender.com
 // this function will happen on each one of the request
 // adding the token to each and every request so that user functionality works properly
 // we send our token back to our backend and verify that we are logged in
