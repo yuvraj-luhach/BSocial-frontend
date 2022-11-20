@@ -131,7 +131,12 @@ const Post = ({ post, setCurrentId }) => {
             {post.title}
           </Typography>
           <CardContent>
-            <Typography color="textSecondary" variant="body2" component="p">
+            <Typography
+              color="textSecondary"
+              variant="body2"
+              component="p"
+              noWrap="false"
+            >
               {post.message}
             </Typography>
           </CardContent>
