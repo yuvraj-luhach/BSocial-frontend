@@ -62,10 +62,6 @@ const Post = ({ post, setCurrentId }) => {
     );
   };
 
-  useEffect(() => {
-    if (post) console.log("hello");
-  }, [post]);
-
   const openPost = () => {
     history.push(`/posts/${post._id}`);
   };
@@ -76,16 +72,11 @@ const Post = ({ post, setCurrentId }) => {
   const handleLike = async () => {
     dispatch(likePost(post._id));
 
-    console.log(user);
-    console.log(post);
     // handling the frontend part since update to the database is asynchronous and they take time
     if (hasLiked) {
-      // console.log(post?);
       setLikes(post?.likes?.filter((id) => id !== userId));
     } else {
       setLikes([...post?.likes, userId]);
-      // console.log(likes);
-      // console.log(post?.likes);
     }
   };
 
